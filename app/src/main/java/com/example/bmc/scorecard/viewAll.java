@@ -17,9 +17,9 @@ public class viewAll extends AppCompatActivity {
         Intent i = getIntent();
         String sList = i.getStringExtra("dbScoresList");
         tvList.setText(sList);
-        //Button bDel = (Button) findViewById(R.id.delete);
+        Button bDel = (Button) findViewById(R.id.delete);
 
-        /*bDel.setOnClickListener(new View.OnClickListener() {
+        bDel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 MySQLiteHelper db = new MySQLiteHelper(viewAll.this);
@@ -28,6 +28,6 @@ public class viewAll extends AppCompatActivity {
                 i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP|Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(i);
             }
-        });*/
+        });
     }
 }

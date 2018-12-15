@@ -41,21 +41,12 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
                 + KEY_RESULT2 + " TEXT, "
                 + KEY_COURSE + " TEXT )";
         sqLiteDatabase.execSQL(CREATE_TABLE);
-        /*String CREATE_TABLE1 = "CREATE TABLE IF NOT EXISTS " + TABLE_NAMESTEP
-                + " ( " + KEY_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
-                + KEY_PLAYER1 + " TEXT, "
-                + KEY_PLAYER2 + " TEXT, "
-                + KEY_RESULT + " TEXT, "
-                + KEY_RESULT2 + " TEXT )";
-        sqLiteDatabase.execSQL(CREATE_TABLE1);*/
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
         String DROP_TABLE_IF_EXISTS = "DROP TABLE IF EXISTS " + TABLE_NAME;
         sqLiteDatabase.execSQL(DROP_TABLE_IF_EXISTS);
-        /*String DROP_TABLE_IF_EXISTS1 = "DROP TABLE IF EXISTS " + TABLE_NAMESTEP;
-        sqLiteDatabase.execSQL(DROP_TABLE_IF_EXISTS1);*/
         this.onCreate(sqLiteDatabase);
     }
 
@@ -70,17 +61,6 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
         db.insert(TABLE_NAME, null, contentValues);
         db.close();
     }
-
-    /*public void addOverall1(Overall overall) {
-        SQLiteDatabase db = this.getWritableDatabase();
-        ContentValues contentValues = new ContentValues();
-        contentValues.put(KEY_PLAYER1, overall.getPlayer1());
-        contentValues.put(KEY_PLAYER2, overall.getPlayer2());
-        contentValues.put(KEY_RESULT, overall.getResult());
-        contentValues.put(KEY_RESULT2, overall.getResult2());
-        db.insert(TABLE_NAMESTEP, null, contentValues);
-        db.close();
-    }*/
 
     public List<Overall> getAllScores() {
         List<Overall> scores = new LinkedList<Overall>();
@@ -104,32 +84,11 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
         return scores;
     }
 
-    /*public void deleteAllScores() {
+    public void deleteAllScores() {
         String DELETE_ALL_SCORES_STATEMENT = "DELETE FROM "+TABLE_NAME;
         SQLiteDatabase db = this.getWritableDatabase();
         db.execSQL(DELETE_ALL_SCORES_STATEMENT);
-    }*/
-
-    /*public List<Overall> getAllScores1() {
-        List<Overall> scores = new LinkedList<Overall>();
-        String getAllScoresStatement1 = "SELECT * FROM "+TABLE_NAMESTEP;
-        SQLiteDatabase db = this.getReadableDatabase();
-        Cursor cursor = db.rawQuery(getAllScoresStatement1,null);
-        Overall overal1 = null;
-        if(cursor.moveToFirst()) {
-            do {
-                overal1 = new Overall();
-                overal1.setId(Integer.parseInt(cursor.getString(0)));
-                overal1.setPlayer1(cursor.getString(1));
-                overal1.setPlayer2(cursor.getString(2));
-                overal1.setResult(cursor.getString(3));
-                overal1.setResult2(cursor.getString(4));
-                scores.add(overal1);
-            } while (cursor.moveToNext());
-        }
-        db.close();
-        return scores;
-    }*/
+    }
 
 }
 
