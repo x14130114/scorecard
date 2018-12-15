@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:drawable="@android:color/background_light" />
+    <item android:drawable="@color/colorPrimaryDark" />
 
     <item>
-        <bitmap android:src="@drawable/golficon1"
+        <bitmap android:src="@drawable/golf_ball"
             android:gravity="center" />
 
     </item>

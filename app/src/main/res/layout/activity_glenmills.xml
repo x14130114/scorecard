@@ -17,7 +17,7 @@
                 android:textSize="25dp"
                 android:id="@+id/course"
                 android:layout_gravity="center"
-                android:hint="@string/Course"
+                android:hint="@string/glenmill"
                 android:layout_span="4"
                 />
         </TableRow>
