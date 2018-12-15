@@ -16,6 +16,8 @@
     <string name="leaderboard">Tabla de lideres</string>
     <string name="Add">Guardar en el marcador</string>
     <string name="ViewAll">Ver todas las puntuaciones</string>
+    <string name="Course">Curso</string>
+    <string name="Yards">Metraje</string>
 
     <!-- Stepaside hole yards-->
     <string name="step1">155</string>
