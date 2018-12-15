@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">tanteador</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="Player1">Jugador 1</string>
+    <string name="Player2">Jugador 2</string>
+    <string name="golftitle">tarjeta de puntuación de golf</string>
+    <string name="create">Crear un cuadro de mandos</string>
+    <string name="choosecard">elige un cuadro de mando</string>
+    <string name="overall">Total</string>
+    <string name="submit">enviar</string>
+    <string name="scorehint">0</string>
+    <string name="step">Stepaside</string>
+    <string name="glenmill">Glen Mills</string>
+    <string name="holetitle">#</string>
+    <string name="leaderboard">Tabla de lideres</string>
+    <string name="Add">Guardar en el marcador</string>
+    <string name="ViewAll">Ver todas las puntuaciones</string>
+
+    <!-- Stepaside hole yards-->
+    <string name="step1">155</string>
+    <string name="step2">93</string>
+    <string name="step3">105</string>
+    <string name="step4">100</string>
+    <string name="step5">95</string>
+    <string name="step6">126</string>
+    <string name="step7">145</string>
+    <string name="step8">115</string>
+    <string name="step9">180</string>
+    <string name="step10">158</string>
+    <string name="step11">97</string>
+    <string name="step12">102</string>
+    <string name="step13">152</string>
+    <string name="step14">155</string>
+    <string name="step15">142</string>
+    <string name="step16">150</string>
+    <string name="step17">170</string>
+    <string name="step18">142</string>
+
+    <!-- Glen mills hole yards-->
+    <string name="glen1">180</string>
+    <string name="glen2">221</string>
+    <string name="glen3">161</string>
+    <string name="glen4">151</string>
+    <string name="glen5">157</string>
+    <string name="glen6">102</string>
+    <string name="glen7">125</string>
+    <string name="glen8">188</string>
+    <string name="glen9">188</string>
+    <string name="glen10">207</string>
+    <string name="glen11">157</string>
+    <string name="glen12">1113</string>
+    <string name="glen13">134</string>
+    <string name="glen14">155</string>
+    <string name="glen15">94</string>
+    <string name="glen16">123</string>
+    <string name="glen17">126</string>
+    <string name="glen18">176</string>
+
+
+    <!-- hole numbers-->
+    <string name="hole1">1</string>
+    <string name="hole2">2</string>
+    <string name="hole3">3</string>
+    <string name="hole4">4</string>
+    <string name="hole5">5</string>
+    <string name="hole6">6</string>
+    <string name="hole7">7</string>
+    <string name="hole8">8</string>
+    <string name="hole9">9</string>
+    <string name="hole10">10</string>
+    <string name="hole11">11</string>
+    <string name="hole12">12</string>
+    <string name="hole13">13</string>
+    <string name="hole14">14</string>
+    <string name="hole15">15</string>
+    <string name="hole16">16</string>
+    <string name="hole17">17</string>
+    <string name="hole18">18</string>
+</resources>
